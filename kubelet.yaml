@@ -1,0 +1,39 @@
+{
+    "plugin": "journald",
+    "pluginConfig": {
+        "source": "kubelet"
+    },
+    "logPath": "/var/log/journal",
+    "lookback": "5m",
+    "bufferSize": 10,
+    "source": "kubelet-monitor",
+    "conditions": [],
+    "rules": [
+        {
+            "type": "temporary",
+            "reason": "KubeletOutOfMemory",
+            "pattern": "Kubelet ran out of memory.*"
+        },
+        {
+            "type": "temporary",
+            "reason": "KubeletDiskPressure",
+            "pattern": "Node has disk pressure.*"
+        },
+        {
+            "type": "temporary",
+            "reason": "KubeletNetworkUnreachable",
+            "pattern": "Network unreachable:.*"
+        },
+        {
+            "type": "temporary",
+            "reason": "KubeletEvictionThresholdExceeded",
+            "pattern": "kubelet (.*): node .* space .* does not have minimum required .*"
+        },
+        {
+            "type": "permanent",
+            "condition": "KubeletNotReady",
+            "reason": "KubeletNotReady",
+            "pattern": "Kubelet is not ready.*"
+        }
+    ]
+}
