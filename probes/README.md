@@ -28,6 +28,14 @@ Why would the app not be ready?
 - If the liveness probe fails, kubernetes will restart the container
 - Used throughout the lifetime of the container, at regular intervals
 
+Designed to test the status of a container and restart the container if it is not live. You app/container may become unresponsive for various reason
+
+- A bug in the system
+- Waiting for another resource indefinitely (A deadluck which can be considered a hard to track bug).
+- Becoming too overloaded.
+
+In such situations, sometimes the best thing to do to automatically resolve the problem is to restart the process (container). That is when the probe will become handy.
+
 
 
 Probes have a number of fields that you can use to more precisely control the behavior of startup, liveness and readiness checks: 
