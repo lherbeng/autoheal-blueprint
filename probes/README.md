@@ -1,12 +1,12 @@
 Three Essential Probes:
 
-Startup Probe 
+**Startup Probe**
 
 - Is container started?
 - Kubernetes will direct traffic to the pod only if startup probe pass
 - One time execution
 
-Readiness Probe
+**Readiness Probe**
 
 - Container ready or not?
 - IF the readiness probe fails, kubernetes will stop traffic to the container until the probe passes
@@ -22,7 +22,7 @@ Why would the app not be ready?
 - It might need to do some housekeeping or cleanup.
 - Some of its dependencies(A cache, a database, etc.) are not working or are unreachable.
 
-Liveness Probe
+**Liveness Probe**
 
 - Whether a container is alive / healthy or not?
 - If the liveness probe fails, kubernetes will restart the container
