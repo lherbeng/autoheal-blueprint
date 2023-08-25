@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels: 
       app: readiness
- template:
+  template:
     metadata:
       labels:
         app: readiness
