@@ -12,6 +12,10 @@ Readiness Probe
 - IF the readiness probe fails, kubernetes will stop traffic to the container until the probe passes
 - Used throughout the lifetime of the container, at regular intervals
 
+- Readiness probe is very similar to startup probe, but it is used throughput the lifetime of the container.
+- It is meant to check periodically if the app is still ready to work or not.
+- If it is not ready, kubernetes will stop sending requests to it until it is ready again.
+
 Liveness Probe
 
 - Whether a container is alive / healthy or not?
