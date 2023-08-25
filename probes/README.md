@@ -16,6 +16,12 @@ Readiness Probe
 - It is meant to check periodically if the app is still ready to work or not.
 - If it is not ready, kubernetes will stop sending requests to it until it is ready again.
 
+Why would the app not be ready?
+
+- it is overload
+- It might need to do some housekeeping or cleanup.
+- Some of its dependencies(A cache, a database, etc.) are not working or are unreachable.
+
 Liveness Probe
 
 - Whether a container is alive / healthy or not?
