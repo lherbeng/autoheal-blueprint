@@ -61,11 +61,19 @@ To test the startupProbe, try to access one of the pods and delete the index.htm
 
 ![delete](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/d48a779a-24de-43a7-bc10-a05674f09824)
 
-Traffic to the two pods will deliver the appropriate application, while traffic to startup-6dc5dd57d6-d6f9d will deliver the Apache Default Page as we purposefully removed the index.hmtl. However, we can still see the service endpoints of the pod and the pod is still running because the startupProbe cannot check the condition of the pods once they are up and running or if something awful has occurred to them. The solution is readinessProbe, delete the startup deployment and deploy the readiness deployment.
+Traffic to the two pods will deliver the appropriate application, while traffic to startup-6dc5dd57d6-d6f9d will deliver the Apache Default Page as we purposefully removed the index.hmtl. However, we can still see the service endpoints of the pod and the pod is still running because the startupProbe cannot check the condition of the pods once they are up and running or if something awful has occurred to them. 
 
 ![svc1](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/d160d1f9-a765-45e6-ae09-79b523e00a24)
 
+The solution is readinessProbe, delete the startup deployment and deploy the readiness deployment.
+
+![delete](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/949ac623-725d-4b13-b71b-186f43371659)
+
 If you don't have startupProbe configured and something happened whether the services are not available or the developer has created the file with the typo error, the kubernetes has no way to find out whether it is running or not.
+
+**Readiness Probe**
+
+Deploy the dep-readiness.yaml file.
 
 
 
