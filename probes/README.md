@@ -75,6 +75,11 @@ If you don't have startupProbe configured and something happened whether the ser
 
 Deploy the dep-readiness.yaml file.
 
+![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/15810085-6108-4645-a21f-5605becf2033)
+
+Expose and describe the service
+
+![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/b4cf72f3-e980-4773-9eae-2364052db9c1)
 
 
 
