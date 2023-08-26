@@ -41,7 +41,7 @@ Probes have a number of fields that you can use to more precisely control the be
 Please visit this official documentation about [Configure Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes).
 
 
-
+# **DEPLOYMENT**
 
 Deploy the dep-startup.yaml file.
 
