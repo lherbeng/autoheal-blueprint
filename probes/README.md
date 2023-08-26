@@ -51,6 +51,12 @@ Check the deployment, pods, replicaset
 
 ![pods](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/bc5add41-80b3-479e-a287-73cedba620ab)
 
+Expose the deployment
+
+![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/fa42566b-879e-4341-b2e7-92e30f3f9031)
+
+To test the startupProbe, try to access one of the pods and delete the index.html in /var/www/html directory.
+
 
 
 If you don't have startupProbe configured and something happened whether the services are not available or the developer has created the file with the typo error, the kubernetes has no way to find out whether it is running or not.
