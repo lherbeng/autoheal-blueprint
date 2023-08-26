@@ -47,5 +47,10 @@ Deploy the dep-startup.yaml file.
 
 ![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/cd344b44-ba95-4459-ba7a-dc4cedc5dc5e)
 
+Check the deployment, pods, replicaset
+
+![pods](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/bc5add41-80b3-479e-a287-73cedba620ab)
+
+
 
 If you don't have startupProbe configured and something happened whether the services are not available or the developer has created the file with the typo error, the kubernetes has no way to find out whether it is running or not.
