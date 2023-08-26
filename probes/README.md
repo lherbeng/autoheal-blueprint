@@ -43,6 +43,8 @@ Please visit this official documentation about [Configure Probes](https://kubern
 
 # **Deployment**
 
+**Startup Probe**
+
 Deploy the dep-startup.yaml file.
 
 ![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/cd344b44-ba95-4459-ba7a-dc4cedc5dc5e)
@@ -63,7 +65,9 @@ Traffic to the two pods will deliver the appropriate application, while traffic 
 
 ![svc1](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/d160d1f9-a765-45e6-ae09-79b523e00a24)
 
-
-
-
 If you don't have startupProbe configured and something happened whether the services are not available or the developer has created the file with the typo error, the kubernetes has no way to find out whether it is running or not.
+
+
+
+
+
