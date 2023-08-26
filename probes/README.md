@@ -1,10 +1,9 @@
-# Three Essential Probes:
+# **Three Essential Probes:**
 
 ***Startup Probe***
 
 - Is container started?
 - Kubernetes will direct traffic to the pod only if startup probe pass
-- One time execution
 
 ***Readiness Probe***
 
