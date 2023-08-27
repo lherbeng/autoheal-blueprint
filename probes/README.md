@@ -85,7 +85,7 @@ If you describe the pods, it shows that the container was successfully started.
 
 ![describe](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/3064af00-3774-4cb2-bb66-d42926576079)
 
-Expose and describe the service
+Expose the deployment and describe the service
 
 ![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/7f23aefc-95d0-4b41-b203-a04e53d18d93)
 
@@ -111,6 +111,25 @@ Deploy the dep-liveness.yaml file.
 
 ![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/b90d29be-c01f-4c63-beab-7d390f46502b)
 
+Check the deployment, pods, replicasets
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/4a2be19c-2015-4b6e-bc70-91cfae54db73)
+
+Expose the deployment and describe the service
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/042c081a-9a57-4bcd-a767-bea125259dc7)
+
+Now, access the pod liveness-f55c4d866-8pkf5 and delete the index.html file.
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/2794e2a3-5a49-4554-9ba4-67fad8987072)
+
+Now, try to watch the pods to observe the livenessProbe. As you can see the pod liveness-f55c4d866-8pkf5 was replaced and the name wasn't changed.
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/e2a04ae5-a642-40f3-940f-13f351027be4)
+
+If you describe the pod, you will be able to see that the liveness probe failed and kubernetes restarted the container.
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/70a92a0b-2a7c-4921-85d4-d679ead1eb45)
 
 
 
