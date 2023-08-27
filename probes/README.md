@@ -97,11 +97,19 @@ If you check the pod readiness-595d7bb4f6-f2cw9 and service readiness-svc, the s
 
 ![pods](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/3068602c-8ed2-4197-8d41-37948cf902fd)
 
-If you describe the pods, you can see that the Readiness probe failed. 
+You can observe that the Readiness probe was unsuccessful if you describe the pods. The livesnessProbe comes into play here because if the pod became unhealthy, Kubernetes should take action, such as restarting it.
 
 ![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/ef38e9c5-c587-4c22-8cf7-ce7587ecf5f4)
 
+The solution is livenessProbe, delete the readiness deployment and deploy the liveness deployment.
 
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/848af87b-ff22-4ca0-90be-ac690046c31c)
+
+**Liveness Probe**
+
+Deploy the dep-liveness.yaml file.
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/b90d29be-c01f-4c63-beab-7d390f46502b)
 
 
 
