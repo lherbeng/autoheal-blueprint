@@ -89,6 +89,18 @@ Expose and describe the service
 
 ![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/7f23aefc-95d0-4b41-b203-a04e53d18d93)
 
+Now, access the pod readiness-595d7bb4f6-f2cw9 and delete the index.html file.
+
+![delete](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/e91bc3e5-8a60-40b5-ad3f-6b9be51b4d66)
+
+If you check the pod readiness-595d7bb4f6-f2cw9 and service readiness-svc, the status of pod is not READY and the endpoints should be removed in svc so that kubernetes will stop sending requests to it until it is ready again.
+
+![pods](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/3068602c-8ed2-4197-8d41-37948cf902fd)
+
+If you describe the pods, you can see that the Readiness probe failed. 
+
+![image](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/ef38e9c5-c587-4c22-8cf7-ce7587ecf5f4)
+
 
 
 
