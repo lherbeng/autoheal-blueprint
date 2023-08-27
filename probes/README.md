@@ -49,7 +49,7 @@ Deploy the dep-startup.yaml file.
 
 ![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/cd344b44-ba95-4459-ba7a-dc4cedc5dc5e)
 
-Check the deployment, pods, replicaset
+Check the deployment, pods, replicasets
 
 ![pods](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/bc5add41-80b3-479e-a287-73cedba620ab)
 
@@ -77,9 +77,19 @@ Deploy the dep-readiness.yaml file.
 
 ![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/15810085-6108-4645-a21f-5605becf2033)
 
+Check the deployment, pods, replicasets
+
+![deploy](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/4871e4f0-f3a4-4015-b5b6-859541ea0463)
+
+If you describe the pods, it shows that the container was successfully started.
+
+![describe](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/3064af00-3774-4cb2-bb66-d42926576079)
+
 Expose and describe the service
 
-![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/b4cf72f3-e980-4773-9eae-2364052db9c1)
+![svc](https://github.com/lherbeng/autoheal-blueprint/assets/72662912/7f23aefc-95d0-4b41-b203-a04e53d18d93)
+
+
 
 
 
