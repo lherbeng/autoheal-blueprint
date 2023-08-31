@@ -42,7 +42,7 @@ This metric calculates the percentage of memory utilization by subtracting the s
 
 # ***It's important to set thresholds that are tailored to your system's normal operating conditions and the level of risk you're willing to tolerate. Here are some general guidelines for memory-related thresholds***
 
-***Memory Usage Percentage:***
+# ***Memory Usage Percentage:***
 
 Threshold: You might consider setting a warning alarm at around 80% memory utilization and a critical alarm at 90% or higher.
 
@@ -50,7 +50,7 @@ Explanation:
 
 These thresholds give you a buffer before memory becomes severely constrained. When memory usage approaches these levels, it's a sign that you should investigate the resource usage of your applications and potentially allocate more memory or optimize them.
 
-***Swap Usage:***
+# ***Swap Usage:***
 
 Threshold: A swap usage alarm could be triggered when swap usage consistently exceeds 10% of the total swap space.
 
@@ -58,7 +58,7 @@ Explanation:
 
 Swapping is typically slower than using physical memory, so it's wise to generate an alarm when a significant portion of the swap space is in use. This can help you address memory issues before they impact performance severely.
 
-***Page Faults:***
+# ***Page Faults:***
 
 Threshold: For page faults, you might set a warning alarm if the rate exceeds a few page faults per second and a critical alarm if it increases significantly, like ten or more per second.
 
