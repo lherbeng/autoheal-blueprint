@@ -40,4 +40,4 @@ Formula:
 
 This metric calculates the percentage of memory utilization by subtracting the sum of free memory (MemFree), memory used for buffers (Buffers), and memory used for caching (Cached) from the total available memory (MemTotal). It then divides this by MemTotal to express memory utilization as a percentage. A high memory utilization percentage indicates that most of the available memory is in use.
 
-#It's important to set thresholds that are tailored to your system's normal operating conditions and the level of risk you're willing to tolerate. Here are some general guidelines for memory-related thresholds:
+# ***It's important to set thresholds that are tailored to your system's normal operating conditions and the level of risk you're willing to tolerate. Here are some general guidelines for memory-related thresholds***
