@@ -28,3 +28,14 @@ node_vmstat_pgmajfault
 ***Explanation:***
 
 This metric represents the number of major page faults per second. A major page fault occurs when a process needs data that is not in physical RAM and must be read from disk or swap. Monitoring this metric can help you identify memory performance issues where processes are frequently swapping data in and out of memory.
+
+# ***Memory Utilization Percentage:***
+
+Formula: 
+
+(1 - (node_memory_MemFree_bytes + node_memory_Buffers_bytes + node_memory_Cached_bytes) / node_memory_MemTotal_bytes) * 100
+
+
+***Explanation:***
+
+This metric calculates the percentage of memory utilization by subtracting the sum of free memory (MemFree), memory used for buffers (Buffers), and memory used for caching (Cached) from the total available memory (MemTotal). It then divides this by MemTotal to express memory utilization as a percentage. A high memory utilization percentage indicates that most of the available memory is in use.
