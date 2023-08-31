@@ -21,10 +21,10 @@ Explanation: This metric calculates the swap space usage by subtracting the free
 
 # ***Page Faults:***
 
-Threshold:
+Metric Name: 
 
-For page faults, you might set a warning alarm if the rate exceeds a few page faults per second and a critical alarm if it increases significantly, like ten or more per second.
+node_vmstat_pgmajfault
 
 ***Explanation:***
 
-A sudden increase in page faults may indicate that your system is struggling to manage memory effectively, which could impact application performance.
+This metric represents the number of major page faults per second. A major page fault occurs when a process needs data that is not in physical RAM and must be read from disk or swap. Monitoring this metric can help you identify memory performance issues where processes are frequently swapping data in and out of memory.
