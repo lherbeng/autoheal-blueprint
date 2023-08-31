@@ -25,6 +25,6 @@ Threshold:
 
 For page faults, you might set a warning alarm if the rate exceeds a few page faults per second and a critical alarm if it increases significantly, like ten or more per second.
 
-Explanation: 
+***Explanation:***
 
 A sudden increase in page faults may indicate that your system is struggling to manage memory effectively, which could impact application performance.
