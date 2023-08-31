@@ -41,3 +41,11 @@ Formula:
 This metric calculates the percentage of memory utilization by subtracting the sum of free memory (MemFree), memory used for buffers (Buffers), and memory used for caching (Cached) from the total available memory (MemTotal). It then divides this by MemTotal to express memory utilization as a percentage. A high memory utilization percentage indicates that most of the available memory is in use.
 
 # ***It's important to set thresholds that are tailored to your system's normal operating conditions and the level of risk you're willing to tolerate. Here are some general guidelines for memory-related thresholds***
+
+Memory Usage Percentage:
+
+Threshold: You might consider setting a warning alarm at around 80% memory utilization and a critical alarm at 90% or higher.
+
+Explanation: 
+
+These thresholds give you a buffer before memory becomes severely constrained. When memory usage approaches these levels, it's a sign that you should investigate the resource usage of your applications and potentially allocate more memory or optimize them.
