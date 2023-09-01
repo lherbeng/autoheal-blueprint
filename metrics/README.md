@@ -7,3 +7,10 @@
 2. Edit the Helm Chart Values: Open the values.yaml file in a text editor or code editor. Look for the section related to Grafana configuration. It might be under a key like grafana or grafanaConfig. If you can't find a specific section for Grafana configuration, check the chart's documentation for the exact key or how to customize Grafana settings.
 
 3. Modify Grafana Configuration Settings: In the values.yaml file, you can specify the settings you want to modify in the grafana.ini file. Customize the settings according to your requirements. For example:
+
+Replace the above example with the specific Grafana configuration settings you wish to change.
+
+4. Apply the Changes: After editing the values.yaml file, save your changes. To apply the new configuration to your Grafana deployment, use the helm upgrade command:
+
+***helm upgrade RELEASE_NAME prometheus-community/kube-prometheus-stack --namespace onprem-monitoring -f values.yaml***
+
