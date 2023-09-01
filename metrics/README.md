@@ -12,5 +12,19 @@ Replace the above example with the specific Grafana configuration settings you w
 
 4. Apply the Changes: After editing the values.yaml file, save your changes. To apply the new configuration to your Grafana deployment, use the helm upgrade command:
 
-***helm upgrade RELEASE_NAME prometheus-community/kube-prometheus-stack --namespace onprem-monitoring -f values.yaml***
+helm upgrade RELEASE_NAME prometheus-community/kube-prometheus-stack --namespace onprem-monitoring -f values.yaml
+
+- RELEASE_NAME: The name of your Helm release.
+- prometheus-community/kube-prometheus-stack: The Helm chart repository and chart name.
+- --namespace onprem-monitoring: The namespace where Grafana is deployed.
+- -f values.yaml: Specifies the custom values file you edited.
+
+5. Verify the Changes: Wait for Helm to update your Grafana deployment. You can monitor the progress by checking the pods:
+
+kubectl get pods -n onprem-monitoring
+
+Once the deployment is updated, you can access Grafana via the web UI and verify that the changes you made to the grafana.ini configuration have taken effect.
+
+By following these steps, you can edit the grafana.ini configuration file for Grafana deployed via Helm, ensuring that your changes are applied to the Grafana instance in your Kubernetes cluster.
+
 
