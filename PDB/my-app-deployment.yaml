@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+  labels:
+    app: my-app
+spec:
+  replicas: 3 # Number of desired replicas
+  selector:
+    matchLabels:
+      app: my-app # Label selector for pods managed by this Deployment
+  template:
+    metadata:
+      labels:
+        app: my-app # Label for pods created by this Deployment
+    spec:
+      containers:
+        - name: my-app-container
+          image: nginx:latest # Replace with your application's image
