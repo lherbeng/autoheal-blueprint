@@ -2,7 +2,7 @@
 
 
 ```diff
-# + Define query and alert condition
++ Define query and alert condition
 ```
 ***Alert Condition Time Range:***
 
