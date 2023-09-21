@@ -1,7 +1,7 @@
 # Monitoring Kubernetes layers:
 
 
-<g>DONE:</g> Define query and alert condition
++ text in green Define query and alert condition
 
 ***Alert Condition Time Range:***
 
