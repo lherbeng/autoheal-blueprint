@@ -1,9 +1,9 @@
 # Monitoring Kubernetes layers:
 
 
-```diff
-+ Define query and alert condition
-```
+
+## Define query and alert condition 
+
 ***Alert Condition Time Range:***
 
 - This parameter defines the time window within which the alert condition is evaluated. It consists of two parts: the start time (now-10m) and the end time (now).
