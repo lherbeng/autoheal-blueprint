@@ -1,7 +1,7 @@
 # Monitoring Kubernetes layers:
 
 
-![#f03c15]Define query and alert condition`#f03c15`
+![#f03c15]Define query and alert condition `#f03c15`
 
 ***Alert Condition Time Range:***
 
