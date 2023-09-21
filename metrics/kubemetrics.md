@@ -1,7 +1,13 @@
 # Monitoring Kubernetes layers:
 
 
-+ text in green Define query and alert condition
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ***Alert Condition Time Range:***
 
